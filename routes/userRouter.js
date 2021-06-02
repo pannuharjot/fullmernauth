@@ -20,7 +20,8 @@ router.patch('/update_role/:id', auth, authAdmin, userCtrl.updateUserRole);
 router.delete('/delete/:id', auth, authAdmin, userCtrl.deleteUser);
 
 
-
+//Google Login Route
+router.post('/google_login', userCtrl.googleLogin);
 
 module.exports = router;
 
